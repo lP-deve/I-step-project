@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./book.css">
+</head>
+<body>
+ <section class="main">
+ <div class="reservation">
+     <a href="./index.html"><h1>unique</h1></a>
+  
+        
+     <span>Book a Table</span>
+     <h2>Reservation</h2>
+
+      <div class="navItems">
+           <nav>
+             <ul>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./blog.html">blog</a></li>
+                <li><a href="./book.html">Book a Table</a></li>
+            </ul>
+           </nav> 
+        </div>
+ </div>
+ <div class="bookATable">
+     <div class="details-of-booking">
+         <h3>Book a table</h3>
+        <p>Our dining atmosphere is casual and comfortable. To reflect this environment, we maintain a formal dress.</p>
+        <form>
+
+          <div class="input">
+            <label for="name">Name</label>
+            <input type="name" id="name" required placeholder="Name" min="3">
+          </div>
+
+          <div class="input">
+            <label for="number">Number of guest</label>
+            <input type="text" id="number" required placeholder="guest number" min="1">
+          </div>
+
+          <div class="twoinput">
+            <div class="input">
+                <label for="date">Date</label>
+                   <input type="date" id="date" required placeholder="choose date">
+            </div>
+               <div class="input">
+                <label for="time">Time</label>
+                <input type="time" id="time" required placeholder="choose time">
+               </div>
+          </div>
+
+           <button type="submit">Book a table</button>
+        </form>
+     </div>
+  
+
+ </div>
+
+ </section>
+
+</body>
+</html>

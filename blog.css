@@ -8,10 +8,6 @@
 }
 html {
   scroll-behavior: smooth;
-  background-color: rgb(250, 246, 246);
-  align-items: center;
-  justify-content: center;
-  display: flex;
 }
 
 input,
@@ -20,22 +16,23 @@ button {
 }
 
 body {
-    width: 1680px;
     min-height: 100vh;
     background-color: #050505;
-    margin: 0 auto;
+}
 
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
 }
 
 #img{
 max-height: 640px;
 width: 100%;
 margin-top: 40px;
-
 }
 
 .content{
-  width: 100%;
    min-height: 100vh; 
 }
 .blogs img{
@@ -49,16 +46,11 @@ margin-top: 40px;
 
     background-image:url(imgs/bg2.png) ;
     background-repeat: no-repeat;
-    background-attachment: scroll;
     width: 100%;
     background-size: cover;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-top: 40px;
-    margin-top: 40px;
+    padding-top: 18px;
+
 } 
 h1{
     font-family: Chillax;
@@ -68,6 +60,7 @@ font-size: 32px;
 color:#FFFFFF;
 line-height: 90%;
 letter-spacing: 0%;
+text-align: center;
 
 }
 h1:hover{
@@ -75,9 +68,12 @@ h1:hover{
 }
 .infos{
     width: 100%;
-    padding-left: 40px;
-    padding-top: 40px;
     min-height: 100vh;
+    padding-top: 18px;
+}
+.cont{
+    width: 90%;
+    margin: auto;
 }
 .blogs img{
     border-radius: 10px;
@@ -105,10 +101,10 @@ h1:hover{
 }
 .hero h2 {
     color: #FFFFFF;
-    font-family: Chillax;
+    font-family:cursive;
     font-weight: 500;
     font-style: Medium;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
@@ -118,6 +114,7 @@ h1:hover{
 
 .hero span {
     color: #FACE8D;
+    margin-top: 80px;
     font-family: Bitter Rose;
     font-weight: 400;
     font-style: Regular;
@@ -126,13 +123,7 @@ h1:hover{
     letter-spacing: 0%;
 
 }
-.main{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    width: 90%;
-    margin:auto;
-}
+
 
 .text span{
 font-family: Chillax;
@@ -176,23 +167,20 @@ opacity: 0.6;
 
 }
 
-.navItems {
-    width: 30vw;
-    background-color: #2d2c2cb7;
-    border-radius: 100px;
-    padding: 20px 12px;
-    margin: auto;
-    margin-top: 100px;
 
-}
 
 nav ul {
     display: flex;
-    width: 100%;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 0 !important;
+    justify-content: space-evenly;
     transition: 0.3s;
+    width: 26vw;
+    background-color: #2d2c2cb7;
+    border-radius: 100px;
+    padding:18px;
+    margin: auto;
+    height: 48px;
+   margin-top: 120px;
 }
 
 ul a {
@@ -210,64 +198,47 @@ ul a {
 .blogs:hover{
     opacity: 0.6;
     cursor: pointer;
+    border:1px solid #FACE8D;
+    border-radius: 12px;
 }
 
  a:hover{
  color:#FACE8D;
+
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1200px){
     .main{
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
-     .navItems nav ul{
-        flex-direction: column;
-        gap:30px;
-      
-    }
-    .navItems nav ul{
+ 
+   nav ul{
         flex-direction: column;
         gap:30px;
         padding-inline: 0px;
-      
+        background:none;
+             width:100vw;
+
     }
-    .navItems{
-          padding:0px;
-          background: none;
-           margin-top: 40px;
-    }
+  
     .infos{
         padding: 0px;
         margin-top: 40px;
     }
-    
+     .hero h2{
+        font-size: 48px;
+    }
+
+    nav ul a{
+        font-size: 20px;
+        color: #dedbdb;
+    }
+  
     
 }
 
-@media screen and (max-width:426px){
-    .main{
-        flex-direction: column;
-    }
-     .navItems nav ul{
-        flex-direction: column;
-        gap:30px;
-      
-    }
-    .navItems nav ul{
-        flex-direction: column;
-        gap:30px;
-        padding-inline: 0px;
-      
-    }
-    .navItems{
-          padding:0px;
-          background: none;
-           margin-top: 40px;
-    }
-    .infos{
-        padding: 0px;
-        margin-top: 40px;
-    }
+@media screen and (max-width:576px){
+ 
     .blogs{
         flex-direction: column;
         max-width:400px;
@@ -284,12 +255,16 @@ ul a {
         display: none;
     }
 
+
     .text{
         width: 100%;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
+    }
+    .hero h2{
+        font-size: 36px;
     }
     
     

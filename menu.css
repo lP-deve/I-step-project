@@ -11,6 +11,8 @@ html {
   background-color: rgb(250, 246, 246);
   align-items: center;
   justify-content: center;
+
+
   display: flex;
 }
 
@@ -20,31 +22,18 @@ button {
 }
 
 body {
-    width: 1680px;
     min-height: 100vh;
     background-color: #050505;
-    margin: 0 auto;
-
 }
 
 .checkout {
     background-image: url(imgs/menu.png);
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    width: 100%;
     background-size: cover;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
+    padding-top: 16px;
+  
 }
-
-.main {
-    width: 100%;
-}
-
 
 .img img {
     height: 600px;
@@ -52,72 +41,45 @@ body {
     object-fit: cover;
 
 }
-
-
-#menu {
-    min-height: 200vh;
-    width: 90%;
-    margin: auto;
+#menu{
+ width: 100vw;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
 }
-
-.menu {
-    display: flex;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items:start;
-
-}
-
 #innerPageNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 30vw;
     margin: auto;
-    margin-top: 16px !important;
-
-
 }
-
-a {
-    color: #FFFFFFCC;
+ul a {
     font-family: Chillax;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
+    font-weight: 500;
+    font-style:bold;
+    font-size: 18px;
+    color: #d5d5d5;
     line-height: 160%;
-    letter-spacing: 0px;
-    transition: 0.3s;
-    
+    letter-spacing: 0%;
+     transition: 0.3s;
 
 }
 
 a:hover {
     color: #FACE8D;
 }
-
-.foodList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
+.foodList{
+    padding-top: 16px;
+    width: 100%;
 }
-
-.content {
-    width: 80%;
-    margin-left: 60px;
-
-}
-
 @font-face {
     font-family: "Bitter Rose";
     src: url('Fonts/Bitter Rose DEMO.otf');
 }
 
 .starters {
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .starters h3 {
@@ -140,7 +102,9 @@ a:hover {
     margin-top: 32px;
     margin-bottom: 16px;
     transition: 0.3s ;
+    padding-right: 12px;
 }
+
 
 .food img {
     border-radius: 10px;
@@ -194,7 +158,6 @@ h1 {
     line-height: 90%;
     letter-spacing: 0%;
     text-align: center;
-    margin-top: 40px;
     transition: 0.3s;
 
 }
@@ -209,7 +172,7 @@ h1:hover{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-top: 140px;
+    margin-top: 220px;
 
 }
 
@@ -225,6 +188,9 @@ h1:hover{
 }
 .food:hover{
 opacity: 0.7;
+border:1px solid #FACE8D;
+border-radius: 10px;
+  cursor: pointer;
 }
 .food h6:hover{
     color:#FACE8D;
@@ -232,74 +198,40 @@ opacity: 0.7;
 
 .hero h2 {
     color: #FFFFFF;
-    font-family: Chillax;
+    font-family:cursive;
     font-weight: 500;
     font-style: Medium;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 100%;
     letter-spacing: 0%;
 
 }
-
-.img {
-    margin-top: 40px;
-}
-
-
-
-.navItems {
-    width: 30vw;
+.mynavigationItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 26vw;
     background-color: #2d2c2cb7;
     border-radius: 100px;
-    padding: 20px 12px;
     margin: auto;
-    margin-top: 100px;
-
+    margin-top: 120px;
+    height: 48px;
+    padding-inline: 22px;
 }
 
-nav ul {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0 !important;
-}
-
-ul a {
-    font-family: Chillax;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
-    color: #FFFFFF;
-    line-height: 100%;
-    letter-spacing: 0%;
 
 
-}
 
-@media screen and (max-width:1100px){
-    .menu{
+@media screen and (max-width:1200px){
+    #menu{
+       grid-template-columns: 1fr;
+    }
+    .mynavigationItems{
+        background:none;
         flex-direction: column;
-    }
-    .foodList{
-        width: 100%;
-    }
-     
-    .navItems nav ul{
-        flex-direction: column;
-        gap:30px;
-      
-    }
-    .navItems nav ul{
-        flex-direction: column;
-        gap:30px;
-        padding-inline: 0px;
-      
-    }
-    .navItems{
-          padding:0px;
-          background: none;
-           margin-top: 40px;
+        gap:22px;
+        padding: 0px;
+        width: 100vw;
     }
       h2{
         text-align: center;
@@ -309,11 +241,18 @@ ul a {
         margin-left: 0px;;
     }
     .foodList{
-        margin-top: 40px;
+        padding-top: 40px !important;
+    }
+    #innerPageNav{
+        width: 60vw;
+    }
+      nav ul a{
+        font-size: 20px;
+        color: #dedbdb;
     }
    
 }
-@media screen and (max-width:426px){
+@media screen and (max-width:576px){
     .food p{
         display: none;
     }
@@ -335,4 +274,11 @@ ul a {
     .hero span{
         text-align: center;
     }
+    .hero h2{
+        font-size: 40px;
+    }
+     .food span{
+        display: none;
+    }
+    
 }
