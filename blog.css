@@ -17,7 +17,7 @@ button {
 
 body {
     min-height: 100vh;
-    background-color: #050505;
+       background-color: #050505;
 }
 
 .main{
@@ -74,6 +74,10 @@ h1:hover{
 .cont{
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .blogs img{
     border-radius: 10px;
@@ -269,4 +273,6 @@ ul a {
     
     
 }
+
+
 

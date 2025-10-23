@@ -127,7 +127,7 @@ ul a{
   font-family: Chillax;
 font-weight: 500;
 font-style: Medium;
-font-size: 12px;
+font-size: 14px;
 color:#081212;
 line-height: 100%;
 letter-spacing: 0%;
@@ -256,6 +256,8 @@ h6{
        .hero h2{
         font-size: 58px;
      }
+
+    
     
 
 }
