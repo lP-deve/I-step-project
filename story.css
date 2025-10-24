@@ -7,12 +7,13 @@
 body {
     background-color: rgb(16, 15, 15);
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 .container {
     width: 80vw;
     height: 100%;
-    background-color: #1f1f1f;
+    background-color: #0e0201bd;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -42,7 +43,7 @@ h2{
     color:#F8D49E;
 }
 .text {
-    color: #dad9d9;
+    color: #fffffffc;
     font-family: cursive;
     font-size: 28px;
     text-align: center;
@@ -145,7 +146,7 @@ a:hover{
   width: 0%; opacity: 0;
 }
 .burger input:checked ~ span:nth-of-type(3) {
-  transform: rotate(-45deg); top: 28px; left: 5px;
+  transform: rotate(-45deg); left: 5px;
 }
 
 
