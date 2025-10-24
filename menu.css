@@ -256,7 +256,6 @@ footer {
         text-align: center;
         
     }
-    
      .content{
         margin-left: 0px;;
     }
@@ -309,36 +308,5 @@ footer {
      .food span{
         display: none;
     }
-    .img img{
-   
-  
- display: none;
     
-
-    }
-nav{
-    position: relative;
-    z-index: 99;
-}
-    
-}
-
-@media screen and  (max-height: 800px) {
-
-.checkout{
-    min-height:  180vh;
-}
-}
-@media screen and  (max-height: 400px) {
-
-.checkout{
-    min-height:  280vh;
-}
-}
-
-@media screen and (min-height:1400px) and (max-height: 3000px) {
-
-.checkout{
-    min-height:  59vh;
-}
 }

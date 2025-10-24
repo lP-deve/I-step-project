@@ -26,7 +26,7 @@ body {
 }
 
 section {
-    height: 80vh;
+    min-height: 100vh;
 }
 
 header {
@@ -270,15 +270,3 @@ ul a{
 
 
 
-@media screen and  (max-height: 450px) {
-section{
-    height: 180vh;
-}
-}
-
-
-@media screen and  (max-height: 750px) {
-section{
-    min-height: 150vh;
-}
-}
