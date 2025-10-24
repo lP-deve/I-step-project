@@ -310,3 +310,30 @@ footer {
     }
     
 }
+
+@media screen and  (max-height: 800px) {
+
+.checkout{
+    min-height:  180vh;
+}
+}
+@media screen and  (max-height: 400px) {
+
+.checkout{
+    min-height:  280vh;
+}
+}
+@media screen and  (max-height: 300px) {
+
+.checkout{
+    min-height:  300vh;
+}
+}
+
+
+@media screen and (min-height:1400px) and (max-height: 3000px) {
+
+.checkout{
+    min-height:  59vh;
+}
+}

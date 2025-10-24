@@ -249,7 +249,7 @@ ul a {
         margin-bottom: 20px;
     }
   #img{
-display: none;
+    display: none;
 
 
 }
@@ -313,7 +313,7 @@ display: none;
 @media screen and (min-height: 200px) and (max-height: 800px) {
 
 .news{
-   min-height: 130vh;
+     min-height: 130vh;
 }
 }
 
@@ -325,3 +325,4 @@ display: none;
    min-height: 200vh;
 } 
 }
+
