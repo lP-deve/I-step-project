@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+     font-family: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +49,7 @@ body {
 
 }
 #menu{
- width: 100vw;
+ width: 98vw;
  display: grid;
   height: 100%;
  grid-template-columns: 1fr 1fr;
@@ -58,10 +63,10 @@ body {
     margin: auto;
 }
 ul a {
-    font-family: Chillax;
+    
     font-weight: 500;
     font-style:bold;
-    font-size: 16px;
+    font-size: 14px;
     color: #d5d5d5;
     line-height: 160%;
     letter-spacing: 0%;
@@ -118,10 +123,10 @@ a:hover {
 }
 
 .food h6 {
-    font-family: Chillax;
+    
     font-weight: 400;
     font-style: Regular;
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffffca;
     line-height: 160%;
     letter-spacing: 0%;
@@ -136,10 +141,10 @@ a:hover {
 }
 
 .food p {
-    font-family: Chillax;
+
     font-weight: 400;
     font-style: Regular;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff5e;
     line-height: 160%;
     letter-spacing: 0px;
@@ -147,7 +152,7 @@ a:hover {
 }
 
 .food span{
-     font-family: Chillax;
+
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
@@ -157,7 +162,7 @@ a:hover {
 }
 
 h1 {
-    font-family: Chillax;
+ 
     font-weight: 500;
     font-style: Medium;
     font-size: 32px;
@@ -233,7 +238,7 @@ footer {
     justify-content: space-between;
     background-color: #18161a;
     padding-inline: 48px;
-    font-size: 16px;
+    font-size: 14px;
     color: #050505;
     color: #bebdbd;
     width: 100%;
@@ -250,7 +255,7 @@ footer {
         flex-direction: column;
         gap:22px;
         padding: 0px;
-        width: 100vw;
+        width:90vw;
     }
       h2{
         text-align: center;
@@ -266,7 +271,7 @@ footer {
         width: 60vw;
     }
       nav ul a{
-        font-size: 20px;
+        font-size: 18px;
         color: #fffcfc;
     }
     footer {
@@ -283,6 +288,9 @@ footer {
 @media screen and (max-width:576px){
     .food p{
         display: none;
+    }
+    footer{
+        font-size: 12px;
     }
     .food{
    flex-direction: column;
