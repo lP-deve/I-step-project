@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html{
      font-family: "Montserrat", sans-serif;
 }
@@ -23,43 +23,53 @@ button {
 
 body {
     min-height: 100vh;
-       background-color: #050505;
+          background-color: #0a0f0f;
+       width: 100%;
 }
 
 .main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 97vw;
     padding-bottom: 40px;
+    gap:18px;
+    width: 100%;
 
 }
 
 #img{
-max-height: 640px;
-width: 96%;
+max-height: 540px;
+width: 100%;
 filter: brightness(70%);
 }
 
 .content{
    min-height: 100vh; 
+   width: 100%;
 }
 .blogs img{
-  min-width: 280px;
+  min-width: 260px;
     height: 210px;
     object-fit: cover;
       margin-bottom: 10px;
 }
+.text p{
+    width: 90%;
+}
 
 .news{
-
+   
     background-image:url(imgs/bg2.png) ;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
     min-height: 100vh;
     padding-top: 18px;
-
 } 
+.blogs{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.133);
+    border-radius: 12px;
+}
 h1{
 
 font-weight: 500;
@@ -75,23 +85,26 @@ h1:hover{
     color:#FACE8D;
 }
 .infos{
-    /* width: 100%; */
+ background-color: #0a0f0f;
     min-height: 100vh;
-    padding-top: 18px;
 }
 .cont{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+        background-color: #0a0f0f;
 }
 .blogs img{
     border-radius: 10px;
     margin-right: 20px;
+    width: 280px;
+    height: 200px;
 }
+
 @font-face {
     font-family: "Chillax";
     src: "url(Fonts/Chillax-Regular.otf)";
@@ -174,9 +187,11 @@ opacity: 0.6;
 .blogs{
     display: flex;
     align-items: center;
-    
-    justify-content: start;
+    margin: auto;
+    justify-content: center;
     transition: 0.3s ease-in-out;
+    width: 96%;
+
 
 }
 
@@ -232,8 +247,8 @@ ul a {
     font-size: 14px;
     color: #050505;
     color: #bebdbd;
-    width: 96%;
-
+    width: 100%;
+    margin:0px
 }
 
 @media screen and (max-width:1200px){
@@ -252,6 +267,7 @@ ul a {
     }
     .blogs{
         margin-bottom: 20px;
+        width: 86vw;
     }
   #img{
     display: none;
@@ -275,7 +291,7 @@ ul a {
      footer {
         padding-inline:  16px;
         font-size: 14px;
-        width: 90vw;
+      
     }
   
     
@@ -333,5 +349,6 @@ ul a {
     .news{
    min-height: 200vh;
 } 
-}
+} 
+
 

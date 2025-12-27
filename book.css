@@ -19,7 +19,7 @@ button {
 
 body {
     min-height: 100vh;
-    background-color: #050505;
+       background-color: #0a0f0f;
 }
 
 .main {
@@ -258,6 +258,11 @@ footer{
     color:#050505;
     margin-top: 20px;
     color:#dedbdb;
+}
+
+footer a{
+       color:#dedbdb;
+       cursor: pointer; 
 }
 
 @media screen and (max-width: 1200px) {

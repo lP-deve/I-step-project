@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+}
+
+h2{
+    text-align: center;
+    color:#fff;
+    margin-top: 11px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap:40px;
+    justify-content: center;    
+    margin:auto;
+    margin-bottom: 32px;
+    margin-top: 18px;
+    
+}
+ul li{
+    color:rgb(243, 243, 243);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ul li:hover{
+      color:#FACE8D;
+}
+body{
+    background-color:rgba(21, 21, 21, 0.978)
+}
+
+.menu-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 86vw;
+    margin:auto;
+    padding-bottom: 22px;
+}
+
+.menu-item img{
+width: 120px;
+height: 120px;
+object-fit: cover;
+border-radius: 12px;
+
+}
+.ingredients{
+    font-size: 13px;
+    text-align: center;
+}
+h3{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin: 8px 0;
+    text-align: center;
+}
+.menu-item{
+     border:1px solid grey;
+    border-radius: 12px;
+    padding: 12px 22px;
+    background-color: #fff;;
+   
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:12px;
+   place-items:  center;
+   place-content: center;
+
+
+}
+.items p{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+
+span{
+    color:rgb(100, 2, 2);
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1200px){
+    .menu-items{
+        grid-template-columns: 1fr 1fr;
+        width: 80vw;
+    }
+    .items{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap:16px;
+    }
+    .menu-item{
+    padding: 8px 16px;
+}
+}
+
+
+@media screen and (max-width: 600px){
+    .menu-items{
+        grid-template-columns: 1fr;
+        width: 60vw;
+    }
+    .items{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap:16px;
+    }
+    .menu-item{
+    padding: 8px 16px;
+}
+ul{
+    gap:12px;
+}
+ ul li{
+    font-size: 16px;
+}
+}
+
+
+@media screen and (max-width: 600px){
+    .menu-items{
+        grid-template-columns: 1fr;
+        width: 60vw;
+    }
+  
+    .menu-item{
+    padding: 8px 16px;
+}
+.items{
+    flex-direction: column;
+    gap:4px;
+}
+.items p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+ul{
+    gap:12px;
+}
+ ul li{
+    font-size: 16px;
+}
+}
+
+
+@media screen and (max-width: 600px){
+   
+    .menu-item{
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    gap:12px;
+}
+ ul li{
+    font-size: 12px;
+}
+h3{
+    font-size: 14px;
+}
+.menu{
+    font-size: 16px;
+}
+}
