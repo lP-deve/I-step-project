@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu Page</title>
     <link rel="stylesheet" href="./menu1.css">
 </head>
-<body>
-    
-<div class="container2">
-    <div class="name">
-        <h2 class="menu">Our Menu</h2>
-        <ul><li class="li1">Starters</li>
-        <li class="li2">Breakfast</li>
-        <li class="li3">Lunch</li>
-        <li class="li4">Drinks</li>
-        </ul>
-    </div>
-<div class="menu-items"></div>
-</div>
 
-<script src="menu1.js"></script>
+<body>
+    <div class="container2">
+        <div class="name">
+            <h2 class="menu">Our Menu</h2>
+            <ul>
+                <li class="li1">Breakfast</li>
+                <li class="li2">Lunch</li>
+                <li class="li3">Dinner</li>
+                <li class="li4">Drinks</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="filterBox">
+        <button id="toggle-filters">Filters</button>
+
+        <div class="filters" style="display:none;">
+            <div class="price">
+                <input type="text" id="price1" placeholder="price from">
+                <input type="text" id="price2" placeholder="price to">
+            </div>
+            <div class="cal">
+                <label for="sortbycall">Sort by calories:</label>
+                <select id="sortbycall">
+                    <option value="">sort</option>
+                    <option value="asc">Low to High calories</option>
+                    <option value="desc">High to Low calories</option>
+                </select>
+            </div>
+            <div class="searcher">
+                <div class="div"> <label for="">search food</label>
+                    <input type="text" id="search" placeholder="Search by name">
+                </div>
+                <div class="div"><button id="apply-filters">Submit</button>
+                    <button id="remove-filters">Remove Filters</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-items"></div>
+    <div class="cont" style="display: none;"></div>
+
+    <script src="menu1.js"></script>
 </body>
+
 </html>

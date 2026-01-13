@@ -6,20 +6,27 @@
     box-sizing: border-box;
      font-family: "Montserrat", sans-serif;
 }
+input, button{
+    cursor: pointer;
+}
 
 h2{
     text-align: center;
-    color:#fff;
-    margin-top: 11px;
+    color:#FACE8D;
+    margin-top: 21px;
     cursor: pointer;
+    transition: 0.3s;
 }
+h2:hover{
+    opacity: 0.6;
+}
+
 ul{
     display: flex;
     list-style: none;
     gap:40px;
     justify-content: center;    
     margin:auto;
-    margin-bottom: 32px;
     margin-top: 18px;
     
 }
@@ -67,6 +74,7 @@ h3{
     border-radius: 12px;
     padding: 12px 22px;
     background-color: #fff;;
+    box-shadow: rgba(213, 213, 213, 0.382) 0px 3px 8px;
    
 }
 .items{
@@ -175,3 +183,154 @@ h3{
     font-size: 16px;
 }
 }
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+    margin-top: 20px;
+}
+.price input{
+     width: 80%;
+}
+.filters input:focus{
+    outline:2px solid #FACE8D;
+    border:none;
+}
+.cal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block:12px;
+}
+.div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.div input{
+    width: 54%;
+}
+.div label{
+ font-size: 13px;  
+ color:white;
+}
+.div button{
+width: 49%;
+}
+.cal label{
+ font-size: 12px;  
+ color:white;
+}
+.filters{
+    width: 340px;
+    border-radius: 12px;
+    padding:16px 26px;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+    margin:auto;
+    position: absolute;
+    top:56%;
+    left:6%;
+    border:1px solid white;
+     box-shadow: rgba(17, 16, 16, 0.933) 0px 3px 8px;
+}
+.cont{
+    width: 600px;
+    height: 300px;
+    align-items: center;
+    display: none;
+    flex-direction:column;
+    background-color: rgb(29, 29, 29);
+     gap:12px;
+    border-radius: 6px;
+    margin:auto;
+    padding:18px 20px;
+    box-shadow: rgba(129, 129, 130, 0.155) 0px 8px 24px;
+
+}
+
+.cont img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin:0 auto;
+}
+.cont h2{
+    color:#FACE8D;
+}
+.searcher{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#search{
+    margin-bottom: 12px;
+}
+.twoItemDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:22px;
+  
+}
+#sortbycall{
+    border-radius: 6px;
+    outline: none;
+    padding:3px 12px;
+    width: 54%;
+}
+#sortbycall:focus{
+  outline:1px solid #FACE8D;  
+  border:none;
+}
+input{
+    border:1px solid grey;
+    border-radius: 6px;
+    outline: none;
+    padding:4px 12px;
+    transition: 0.3s;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    margin: 0 auto;
+}
+.name{
+    width: 100%;
+}
+.filterBox{
+    width: 86vw;
+    align-items: end;
+    justify-content:start;
+    display: flex;
+    margin:0 auto;
+    margin-bottom: 40px;
+    position: relative;
+  
+}
+.filterBox button{
+      margin-bottom: 20px;
+      padding:6px 20px;
+      background-color:#FACE8D;
+      color:#0e0e0e;
+      border:none;
+      border-radius: 12px;
+      margin-top: 16px;
+      transition: 0.3s;
+}
+.filterBox button:hover{
+opacity: 0.6;
+}
+
+
