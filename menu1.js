@@ -77,6 +77,7 @@ function renderMenu(items) {
     });
 }
 
+
 document.querySelector("#toggle-filters").addEventListener("click", () => {
     filterDiv.style.display = filterDiv.style.display === "none" ? "block" : "none";
 });

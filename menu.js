@@ -54,7 +54,7 @@ btn1.addEventListener("click", () => {
   window.location.href = `menu1.html?type=food`;
 });
 btn2.addEventListener("click", () => {
-  window.location.href = `menu1.html?type=breakfast`;
+  window.location.href = `menu1.html?type=lunch`;
 });
 btn3.addEventListener("click", () => {
   window.location.href = `menu1.html?type=dinner`;
