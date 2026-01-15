@@ -43,6 +43,24 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#img{
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 10s infinite;  
+}
+
+  @keyframes bgChange {
+    0% {
+      background-image: url("https://i.pinimg.com/736x/f6/99/64/f69964cadfbcfcc66956ee2f1e6dcf75.jpg")
+    }
+    50% {
+      background-image: url('https://i.pinimg.com/1200x/af/1a/aa/af1aaa76f7cdb145df34a9d7c7e3a1df.jpg');
+    }
+    100% {
+      background-image: url('https://i.pinimg.com/736x/53/1d/a7/531da75957286871a7ce2ab59ffc4a7b.jpg');
+    }
+  }
 h2{
     color:#F8D49E;
 }

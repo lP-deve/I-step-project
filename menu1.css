@@ -247,18 +247,16 @@ width: 49%;
     align-items: center;
     display: none;
     flex-direction:column;
-    background-color: rgb(29, 29, 29);
-     gap:12px;
+     gap:22px;
     border-radius: 6px;
     margin:auto;
     padding:18px 20px;
-    box-shadow: rgba(129, 129, 130, 0.155) 0px 8px 24px;
-
+   
 }
 
 .cont img{
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     display: block;
     margin:0 auto;
 }

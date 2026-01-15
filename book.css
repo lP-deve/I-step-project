@@ -114,6 +114,19 @@ label {
     letter-spacing: 0px;
 
 }
+#teatArea{
+     width: 100%;
+    width: 560;
+    height: 60;
+    opacity: 1;
+    padding: 16px 24px;
+    border-radius: 10px;
+    border-width: 1px;
+    border: 1px solid #ffffff49;
+    background-color: transparent;
+    color: rgb(255, 255, 255); 
+    resize: none;
+}
 
 input {
     width: 100%;
@@ -165,6 +178,7 @@ form button:hover {
 }
 
 
+
 ul {
     display: flex;
     align-items: center;
@@ -198,7 +212,6 @@ ul a:hover {
 
 input[type="date"],
 input[type="time"] {
-  background-color: #000; 
   color: #fff; 
   padding: 8px;
   border-radius: 6px;
@@ -252,12 +265,29 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #0f0f0f;
+    background-color: #0e0e0e;
     padding-inline: 48px;
     font-size: 14px;
     color:#050505;
     margin-top: 20px;
     color:#dedbdb;
+    backdrop-filter: blur(16px);
+}
+a{
+       color:#f7deb9;
+      
+       cursor: pointer; 
+      
+}
+.aDiv{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    margin-top: 30px;
+}
+a:hover{
+    opacity: 0.7;
 }
 
 footer a{
@@ -342,5 +372,41 @@ footer a{
 .reservation{
    min-height: 200vh;
 }
+}
+
+.success {
+   position: fixed;             
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 450px;
+    height: 200px;
+    padding: 30px 20px;
+    background-color: rgba(13, 13, 13, 0.95); 
+    text-align: center;
+    border-radius: 16px;
+    opacity: 0;                          
+    transition: opacity 0.5s ease;  
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #fad398;
+}
+
+.success.show {
+    opacity: 1;
+
+}
+.main.dis{
+    opacity: 0.4;
+}
+
+.success h1 {
+   color:#facc87;
+    font-size: 28px;
+    font-weight: bold;
+    font-weight: bold;
+    font-family: cursive;
 }
 

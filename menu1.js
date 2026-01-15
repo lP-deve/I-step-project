@@ -31,6 +31,7 @@ async function getMenu() {
         currentTypeItems = data.filter(item => item.type?.toLowerCase() === type);
 
         renderMenu(currentTypeItems);
+        console.log(currentTypeItems)
         cont.style.display = "none"; 
 
     } catch (error) {
@@ -47,9 +48,6 @@ function renderMenu(items) {
         cont.innerHTML = `<h2>Sorry, nothing found</h2>`;
         let img = document.createElement("img");
         img.src = "imgs/sad-face.png";
-        img.alt = "Sad face";
-        img.style.width = "200px"; 
-        img.style.height = "200px";
         cont.appendChild(img);
         cont.style.display = "flex";
         return;
@@ -88,7 +86,7 @@ document.querySelector("#apply-filters").addEventListener("click", () => {
     const calSort = document.querySelector("#sortbycall").value;
     const searchQuery = document.querySelector("#search").value.toLowerCase();
 
-    let filteredItems = currentTypeItems.filter(item => {
+    let filteredItems = currentTypeItems.filter(item => { 
         const price = parseFloat(item.price) || 0;
         const matchesPrice = price >= minPrice && price <= maxPrice;
         const matchesSearch = item.name.toLowerCase().includes(searchQuery);
