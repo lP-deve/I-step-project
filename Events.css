@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(16, 16, 16);
+    font-family: "Montserrat", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap:120px;
+    width: 90vw;
+    margin:0 auto;
+    padding-bottom: 30px;
+}
+button , input{
+    cursor:pointer
+}
+@font-face {
+    font-family: "Bitter Rose";
+    src: url('Fonts/Bitter Rose DEMO.otf');
+}
+
+.blog{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    background-color: rgb(17, 18, 18);
+    place-content: center;
+    place-items: center;
+    border:1px solid rgb(246, 215, 158);
+    border-radius: 4px;
+    padding:16px;
+    transition: 0.3s;
+
+}
+.blog:hover{
+    opacity: 0.8;
+}
+
+.blog img{
+    width: 100%;
+    min-height: 280px;
+    border-radius: 4px;
+}
+h1{
+    font-size: 60px;
+    color:rgb(247, 195, 133);
+    text-align: center;
+     font-family: "Bitter Rose";
+}
+h2{
+    font-size: 52px;
+    color:rgb(250, 170, 9);
+    text-align: center;
+    margin-top: 30px;
+    font-family: cursive;
+   
+   
+}
+.blog div p{
+    font-size: 20px;
+    color:rgb(255, 255, 255); 
+    width: 340px;
+    margin-top: 16px;
+    
+}
+
+
+p{
+    color:ghostwhite;
+    font-size: 26px;
+    margin:auto;
+    margin-bottom: 60px;
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+
+.blog.reversing{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap:16px;
+}
+
+.blog.reversing .info{
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.blog.reversing img{
+    flex: 1;
+    min-width: 0;
+    min-height: 280px;
+    width: 100%;
+    height: auto;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35vw;;
+    margin:auto;
+    margin-top: 30px;
+}
+ul a{
+font-weight: 500;
+font-style: Medium;
+font-size: 17px;
+color:#efb03c;
+text-decoration: none;
+transition: 0.3s;
+ 
+}
+ul a:hover{
+color:hsl(42, 68%, 79%);
+}
+
+.nav{
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    .container{
+    width: 96%;
+    padding:12px;
+}
+
+.blog{
+    grid-template-columns: 220px 1fr;
+  
+}
+
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 40px;
+  
+}
+.blog div p{
+    font-size: 16px;
+    width: 180px;   
+}
+
+
+p{
+    font-size: 22px;
+    max-width: 500px;
+    width: 100%;
+}
+.blog.reversing img {                     
+  
+
+    max-width: 100%;
+    height: 280px;                     
+}
+.blog.reversing{
+    width: 100%;
+   
+  
+}
+nav ul {
+
+    width: 60vw;;
+
+}
+.blog.reversing .info {
+    order: 2;                      
+    width: 220px;
+   
+}
+ul a{
+font-size: 12px;
+ 
+}
+
+}
+
+
+@media screen and (max-width: 600px){
+    .container{
+    width: 100%;
+    padding:12px;
+}
+
+.blog{
+    grid-template-columns:1fr;
+    gap:0px
+  
+}
+.blog.reversing{
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+  
+}
+.blog.reversing{
+    display: flex;
+    flex-direction: column;
+    
+}
+.blog.reversing img{
+ width: 100% !important;
+ height: 260px !important;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 28px;
+  
+}
+.blog div p{
+    font-size: 14px;
+    width: 180px;  
+    margin-bottom: 16px; 
+}
+
+
+p{
+    font-size: 16px;
+    max-width: 400px;
+    width: 100%;
+    padding-inline: 4px;
+}
+
+
+nav ul {
+
+    width:90%;
+
+}
+ul a{
+font-size: 10px;
+ 
+}
+
+}
+
+
+

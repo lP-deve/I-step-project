@@ -118,8 +118,8 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 35vw;
-    background-color: #e7e7e7;
+    width: 46vw;
+    background-color:#FACE8D;
     border-radius: 100px;
     padding: 22px;
     margin:auto;
@@ -134,19 +134,19 @@ color:#001212;
 line-height: 100%;
 letter-spacing: 0.5px;
  border-radius:40px;
- background-color: #dfdfdf; 
+ color: #000000;
  padding:6px 14px;
- transition: 0.3 ease-in-out;
+ transition: 0.3s;
  
 }
 
 ul a:hover{
-    background-color: #050505;
+    
     color:rgb(255, 255, 255)
 }
 ul li img:hover {
   cursor: pointer;
-  animation: shakeX 0.4s ease-in-out;
+  animation: shakeX 0.4s ;
 }
 
 @keyframes shakeX {
@@ -188,7 +188,7 @@ h6{
     height:130px;
     position: absolute;
     bottom:-10%;
-    left:20%;
+    left:14%;
     padding-inline: 14px;
     border-radius: 8px;
     display: none;

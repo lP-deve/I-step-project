@@ -80,6 +80,7 @@ body {
     width: 30vw;
     margin: auto;
 }
+
 ul a {
     
     
@@ -248,7 +249,7 @@ border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 26vw;
+    width: 38vw;
     background-color: #2d2c2cb7;
     border-radius: 100px;
     margin: auto;
