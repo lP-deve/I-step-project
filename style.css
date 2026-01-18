@@ -119,30 +119,29 @@ nav ul {
     align-items: center;
     justify-content: space-evenly;
     width: 46vw;
-    background-color:#FACE8D;
+    background-color:#ffffffbd;
     border-radius: 100px;
     padding: 22px;
     margin:auto;
     margin-top: 100px;
     height: 52px;
+  
 }
 ul a{
 font-weight: 500;
 font-style: Medium;
 font-size: 17px;
-color:#001212;
 line-height: 100%;
 letter-spacing: 0.5px;
  border-radius:40px;
- color: #000000;
+  color:rgb(7, 7, 7);
  padding:6px 14px;
  transition: 0.3s;
  
 }
 
 ul a:hover{
-    
-    color:rgb(255, 255, 255)
+opacity: 0.6;
 }
 ul li img:hover {
   cursor: pointer;
@@ -174,16 +173,17 @@ h6{
     transition: 0.3s;
 }
 .time:hover{
-    background-color: #050505;
-    color:#e4e1e1;
+    background-color:#FACE8D;
+    color:#020202;
     border-radius: 4px;
 }
 .time p{
     font-size: 12px;
+    padding-inline: 4px;
 }
 
 .show{
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.808);
     width: 180px;
     height:130px;
     position: absolute;

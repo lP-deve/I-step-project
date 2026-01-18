@@ -228,6 +228,9 @@ h2{
     font-size: 28px;
   
 }
+li{
+    list-style: none;
+}
 .blog div p{
     font-size: 14px;
     width: 180px;  
