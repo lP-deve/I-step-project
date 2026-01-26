@@ -24,7 +24,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    
+    scroll-behavior: smooth;
 
 }
 
@@ -173,14 +173,15 @@ h6{
     transition: 0.3s;
 }
 .time:hover{
-    background-color:#FACE8D;
-    color:#020202;
+    background-color:#100f0fc7;
+    color:#ffffff;
     border-radius: 4px;
 }
 .time p{
     font-size: 12px;
-    padding-inline: 4px;
+    padding:2px 6px;
 }
+
 
 .show{
       background-color: rgba(255, 255, 255, 0.808);

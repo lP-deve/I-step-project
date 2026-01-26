@@ -12,6 +12,7 @@ body {
     linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
     url(imgs/restbg.jpg) center/cover no-repeat;
   color: #f5f5f5;
+   scroll-behavior: smooth;
 
 }
 .titlee{
@@ -33,12 +34,14 @@ section {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0,0,0,.5);
-
+  
 }
 
 aside {
-  background: linear-gradient(180deg, #1f1f1f, #111);
+  background: linear-gradient(180deg, #1c1a1a, #111);
+  backdrop-filter: blur(15px);
   padding: 24px;
+  border-radius: 6px;
 }
 
 table {
@@ -56,6 +59,7 @@ th {
   letter-spacing: 0.08em;
   font-size: 0.85rem;
   padding: 10px;
+  padding-top: 20px;
 }
 
 td {
@@ -102,7 +106,7 @@ button {
 }
 
 button:first-child {
-  background: linear-gradient(135deg, #f8d477, #e6b84e);
+  background: linear-gradient(135deg, #ffaf04, #f0f408);
   color: #111;
   margin-right: 6px;
 }
@@ -124,14 +128,15 @@ li a:hover{
    color:#f8efd8;
 }
 button:last-child {
-  background: linear-gradient(135deg, #ff5f5f, #d93c3c);
+  background: linear-gradient(135deg, #fe4f10, #f9b17a);
   color: #fff;
 }
 
 button:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(0,0,0,.35);
-  opacity: 0.7;
+
+     background: linear-gradient( 135deg, #473927, #f7b748);
 }
 
 input[type="date"],
@@ -227,8 +232,7 @@ footer a{
 
   table {
     width: 100%;
-    overflow-x: auto;       
-     display: block;      
+      
   }
   td, th {
     padding: 4px;

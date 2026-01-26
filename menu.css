@@ -50,7 +50,7 @@ body {
 
 }
 .starters button{
-    background-color: #fac678;
+    background:linear-gradient(97deg, #634830,  #ec9004);
     border-radius: 8px;
     padding: 2px 16px;
     font-weight: 500;
@@ -64,7 +64,7 @@ body {
     margin-bottom: 12px;
 }
 .starters button:hover{
-    opacity: 0.5;
+       background:linear-gradient(90deg, #d0b60f,  #ec9004);
 }
 #menu{
  width: 98vw;

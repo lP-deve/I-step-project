@@ -40,7 +40,8 @@ ul li:hover{
       color:#FACE8D;
 }
 body{
-    background-color:rgba(21, 21, 21, 0.978)
+    background-color:rgba(21, 21, 21, 0.978);
+     scroll-behavior: smooth;
 }
 
 .menu-items{
