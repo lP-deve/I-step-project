@@ -491,6 +491,10 @@ footer {
     color: #bebdbd;
     width: 90%;
     margin: 0 auto;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
   
 }
 
