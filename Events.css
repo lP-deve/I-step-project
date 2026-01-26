@@ -10,15 +10,16 @@ body{
     min-height: 100vh;
     background-color: rgb(16, 16, 16);
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 .container{
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
     gap:120px;
-    width: 90vw;
+    width: 86vw;
     margin:0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
 }
 button , input{
     cursor:pointer
@@ -41,7 +42,8 @@ button , input{
 
 }
 .blog:hover{
-    opacity: 0.8;
+    box-shadow: rgba(255, 255, 255, 0.267) 0px 3px 8px;
+    border:1px solid rgb(246, 129, 70);
 }
 
 .blog img{
@@ -54,18 +56,19 @@ h1{
     color:rgb(247, 195, 133);
     text-align: center;
      font-family: "Bitter Rose";
+    
 }
 h2{
-    font-size: 52px;
+    font-size: 40px !important;
     color:rgb(250, 170, 9);
     text-align: center;
-    margin-top: 30px;
+     margin-top: 68px;
     font-family: cursive;
    
    
 }
 .blog div p{
-    font-size: 20px;
+    font-size: 16px;
     color:rgb(255, 255, 255); 
     width: 340px;
     margin-top: 16px;
@@ -75,7 +78,7 @@ h2{
 
 p{
     color:ghostwhite;
-    font-size: 26px;
+    font-size: 20px ;
     margin:auto;
     margin-bottom: 60px;
     width: 600px;
@@ -83,6 +86,7 @@ p{
     margin-top: 20px;
     
 }
+
 
 
 .blog.reversing{
@@ -113,7 +117,8 @@ nav ul {
     justify-content: space-evenly;
     width: 35vw;;
     margin:auto;
-    margin-top: 30px;
+    padding-block: 12px;
+   
 }
 ul a{
 font-weight: 500;
@@ -122,16 +127,25 @@ font-size: 17px;
 color:#efb03c;
 text-decoration: none;
 transition: 0.3s;
+
  
 }
 ul a:hover{
 color:hsl(42, 68%, 79%);
+}
+li{
+    list-style: none;
 }
 
 .nav{
     width: 100%;
     justify-content: end;
     align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #18161a;
+    z-index: 99999;
 }
 
 
@@ -142,6 +156,7 @@ color:hsl(42, 68%, 79%);
     width: 96%;
     padding:12px;
 }
+
 
 .blog{
     grid-template-columns: 220px 1fr;
@@ -192,6 +207,10 @@ font-size: 12px;
  
 }
 
+#footer{
+       padding-inline: 18px!important;
+}
+
 }
 
 
@@ -236,6 +255,9 @@ li{
     width: 180px;  
     margin-bottom: 16px; 
 }
+#footer{
+       padding-inline: 4px;
+}
 
 
 p{
@@ -256,6 +278,27 @@ font-size: 10px;
  
 }
 
+}
+#footer{
+    background-color: #18161a;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between !important;
+        padding-inline: 28px;
+        width: 100% !important;
+        position: fixed;
+        padding-inline: 48px;
+        bottom:0;
+        left:0%;
+}
+
+#footer p{
+ font-size: 16px;
+ margin:0;
+ padding: 0;
+ color: #dedbdb;
+ width: auto !important;
 }
 
 

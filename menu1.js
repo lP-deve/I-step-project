@@ -113,5 +113,18 @@ document.querySelector("#remove-filters").addEventListener("click", () => {
     filterDiv.style.display = "none";
 });
 
+const navItems = document.querySelector("#navItems");
+const burgerCheckbox = document.querySelector("#burger");
+let filterbtn = document.getElementById("toggle-filters");
+burgerCheckbox.addEventListener("change", () => {
+  if (burgerCheckbox.checked) {
+    navItems.classList.add("active");
+    filterbtn.style.zIndex = -9999;
+  } else {
+    navItems.classList.remove("active");
+  }
+});
+
+
 
 getMenu();

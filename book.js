@@ -10,7 +10,7 @@ form.addEventListener('submit', async (e) => {
     number: document.getElementById('number').value.trim(),
     date: document.getElementById('date').value,
     time: document.getElementById('time').value,
-    text: document.getElementById('teatArea').value,
+    text: document.getElementById('textArea').value,
 
   }
 

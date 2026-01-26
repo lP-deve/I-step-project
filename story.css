@@ -44,6 +44,7 @@ section {
     background-size: cover;
 }
 #img{
+    height:500px;
     border-radius: 12px;
     background-size: cover;
     background-position: center;
