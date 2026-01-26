@@ -71,6 +71,7 @@ body {
  display: grid;
   height: 100%;
  grid-template-columns: 1fr 1fr;
+ padding-bottom: 50px;
  
 }
 #innerPageNav {
@@ -124,6 +125,10 @@ a:hover {
     line-height: 70%;
     letter-spacing: 0%;
 
+}
+#coverimg{
+    object-fit: cover;
+    height: 800px;
 }
 
 .food {
