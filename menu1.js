@@ -45,7 +45,7 @@ function renderMenu(items) {
     cont.style.display = "none"; 
 
     if (items.length === 0) {
-        cont.innerHTML = `<h2>Sorry, nothing found</h2>`;
+        cont.innerHTML = `<h4>Sorry, nothing found</h4>`;
         let img = document.createElement("img");
         img.src = "imgs/sad-face.png";
         cont.appendChild(img);

@@ -180,8 +180,10 @@ width: 49%;
     display: block;
     margin:0 auto;
 }
-.cont h2{
+.cont h4{
     color:#FACE8D;
+    font-size: 26px;
+   
 }
 .searcher{
     width: 100%;

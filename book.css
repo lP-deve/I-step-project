@@ -492,6 +492,235 @@ footer a{
   overflow: hidden;
 }
 
+
+.flatpickr-calendar,
+.flatpickr-calendar * {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  outline: none;
+}
+
+
+.flatpickr-calendar {
+  background-color: #0f0f0f !important;
+  border: 1px solid #131010 !important;
+  border-radius: 10px;
+  padding: 12px;
+  width: 220px !important;
+  color: #fff !important;
+}
+
+
+.flatpickr-current-month {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #fff !important;
+  font-size: 14px !important;
+}
+
+.flatpickr-current-month .cur-month {
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.flatpickr-current-month input.cur-year {
+  background: transparent !important;
+  color: #fff !important;
+  font-size: 13px;
+  width: 48px;
+  cursor: text;
+}
+
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  background-color: #0f0f0f !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.flatpickr-monthDropdown-months option {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  position: absolute;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.flatpickr-prev-month { left: 8px; }
+.flatpickr-next-month { right: 8px; }
+
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+  fill: #fff !important;
+  width: 12px;
+  height: 12px;
+}
+
+
+.flatpickr-weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.flatpickr-weekday {
+  width: 32px;
+  text-align: center;
+  font-size: 10px;
+  color: #aaa !important;
+}
+
+
+.flatpickr-days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flatpickr-day {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff !important;
+}
+
+
+.flatpickr-day:hover {
+  background-color: #2a2a2a !important;
+  color: #fff !important;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+.flatpickr-day.today {
+  border: 1px solid #666 !important;
+}
+
+.flatpickr-day.disabled {
+  color: #555 !important;
+  cursor: not-allowed;
+}
+
+
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+  color: #555 !important;
+}
+
+
+.flatpickr-time {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #0f0f0f !important;
+  border-top: 1px solid #131010 !important;
+  padding: 12px;
+  border-radius: 0 0 10px 10px;
+  width: 220px;
+  box-sizing: border-box;
+}
+
+
+.flatpickr-time .numInputWrapper {
+  width: 56px;
+  height: 38px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 4px rgba(255,255,255,0.05);
+}
+
+.flatpickr-time input {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.flatpickr-time .numInputWrapper:hover {
+  background: #2a2a2a;
+}
+
+.flatpickr-time input:focus {
+  color: #fff;
+}
+
+.flatpickr-time .flatpickr-time-separator {
+  color: #888;
+  font-size: 14px;
+  line-height: 38px;
+}
+
+
+.flatpickr-am-pm {
+  background: #1a1a1a !important;
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #222;
+}
+
+.flatpickr-am-pm:hover {
+  background: #2a2a2a;
+}
+
+
+.flatpickr-time .arrowUp,
+.flatpickr-time .arrowDown {
+  border: none !important;
+  color: #aaa;
+}
+
+.flatpickr-time .arrowUp:hover,
+.flatpickr-time .arrowDown:hover {
+  color: #fff;
+}
+
+
+.flatpickr-time input:disabled {
+  color: #555 !important;
+  cursor: not-allowed;
+  background: transparent !important;
+
+}
+
+
 @media screen  and (max-width: 500px){
   .logOrsignIn{
     width: 80vw;
