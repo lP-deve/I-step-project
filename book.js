@@ -1,5 +1,7 @@
 const form = document.getElementById('bookingForm');
 
+    const main = document.querySelector(".main")
+    const token = localStorage.getItem('token');
 
 
 form.addEventListener('submit', async (e) => {
@@ -17,8 +19,11 @@ form.addEventListener('submit', async (e) => {
   try {
     const response = await fetch('https://694fb0888531714d9bceb453.mockapi.io/bookings', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+       },
       body: JSON.stringify(formData)
+      
     });
 
     if (!response.ok) throw new Error('Failed to save booking');
@@ -27,7 +32,7 @@ form.addEventListener('submit', async (e) => {
     console.log(data);
 
     const msg = document.querySelector(".success");
-    const main = document.querySelector(".main")
+
   
         msg.classList.add("show");
         main.classList.add("dis")
@@ -45,4 +50,18 @@ form.addEventListener('submit', async (e) => {
 }
 
 });
+
+
+let loginOrsignIn = document.querySelector('.logOrsignIn');
+
+console.log(localStorage.getItem('token'));
+if(!localStorage.getItem('token')){
+    loginOrsignIn.classList.add('show');
+      main.classList.add("dis");
+      document.body.classList.toggle("noScroll");
+}else{
+    loginOrsignIn.classList.remove('show');
+      main.classList.remove("dis")
+}
+
 

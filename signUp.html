@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./signUp.css">
+</head>
+
+<body>
+  <div class="success">
+   <h2>Sign Up Successfully!</h2>
+  </div>
+  <div class="main">
+  
+    <h1>Sign Up</h1>
+  <form id="register">
+    <div class="inp1">
+      <label>First Name</label>
+      <input type="text" name="firstName" required value="user" />
+    </div>
+
+    <div class="inp1">
+      <label>Last Name</label>
+      <input type="text" name="lastName" required value="person" />
+    </div>
+
+
+    <label style="display: none;">
+      Age
+      <input type="number" name="age" min="1" required value="21" />
+    </label>
+
+    <div class="inp1">
+      <label> Email</label>
+      <input type="email" name="email" required value="example@test.com" />
+    </div>
+
+    <div class="inp1">
+      <label> Password</label>
+      <input type="password" name="password" minlength="6" value="Password123" required />
+    </div>
+
+
+    <div class="inp1"> <label> Address</label><input type="text" name="address" value="Tbilisi" /></div>
+
+     <div class="inp1">
+      <label> Phone</label>
+      <input type="tel" name="phone" value="+995555666777" />
+      </label>
+     </div>
+
+      <label style="display: none;">
+        Zip Code
+        <input type="text" name="zipcode" value="01000" />
+      </label>
+
+      <label style="display: none;">
+        Avatar (URL)
+        <input type="url" name="avatar"
+          value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZeYOtBEYqFjWk-0aF7m_WhoyrmATpk4Mt6A&s" />
+      </label>
+
+      <label style="display: none;">
+        Gender
+        <select name="gender" required>
+          <option value="">Select gender</option>
+          <option value="MALE" selected>Male</option>
+          <option value="FEMALE">Female</option>
+          <option value="OTHER">Other</option>
+        </select>
+      </label>
+
+     <div class="btndiv">
+       <button type="submit">Submit</button>
+     </div>
+  </form>
+  </div>
+
+  <script src="./signUp.js"></script>
+</body>
+
+</html>

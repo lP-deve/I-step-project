@@ -142,6 +142,7 @@ letter-spacing: 0.5px;
 
 ul a:hover{
 opacity: 0.6;
+cursor: pointer;
 }
 ul li img:hover {
   cursor: pointer;
@@ -176,6 +177,7 @@ h6{
     background-color:#100f0fc7;
     color:#ffffff;
     border-radius: 4px;
+    cursor: pointer;
 }
 .time p{
     font-size: 12px;
@@ -220,7 +222,10 @@ h6{
       margin-top: 22px;
 
      }
-   
+    
+   section{
+    margin-bottom: 60px;
+   }
    
     nav ul{
         flex-direction: column;

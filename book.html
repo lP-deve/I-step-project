@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./book.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./dateTime.css">
+    
 </head>
 <body>
  <section class="main">
@@ -70,9 +74,40 @@
  </div>
 
 
+
+
  </section>
+
+
+ <div class="logOrsignIn">
+   <h1>Please sign in or sign up to book a table</h1>
+    <div class="buttons">
+      <a href="signin.html"><button>Sign In</button></a>
+      <a href="./signUp.html"><button>Sign Up</button></a>
+
+ </div>
+ </div>
+
  <div class="success" style="diplay:none"> <h1>Table ordered successfuly!</h1></div>
 <footer><a href="https://www.figma.com/design/QltCJ8gszwhGP5RiFiImPz/Nique---Restaurant-Website---Webflow-Template--Community-?m=auto&t=yCRCmXSzhVydN05u-6"><p>&copy all rights reserved</p> </a><p>IT STEP - 2025</p></footer>
   <script src="./book.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  flatpickr("#date", {
+    dateFormat: "Y-m-d",
+    allowInput: true,
+  });
+flatpickr("#time", {
+  noCalendar: true,
+  enableTime: true,
+  dateFormat: "H:i",
+  time_24hr: true,
+  allowInput: true
+});
+
+
+
+  
+</script>
 </body>
 </html>

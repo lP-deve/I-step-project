@@ -339,6 +339,9 @@ footer {
         text-align: center;
         
     }
+    .thaiMsg{
+        display: none;
+    }
     #innerPageNav{
         display: none;
     }

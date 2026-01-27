@@ -47,10 +47,10 @@ body {
 
 }
 
-h1 {
+ h1 {
     color: #ffffff;
     transition: 0.3s;
-}
+} 
 
 h1:hover {
     color: #F8D49E;
@@ -306,6 +306,7 @@ footer a{
 @media screen and (max-width: 1200px) {
     .main {
         grid-template-columns: 1fr;
+        margin-bottom: 100px;
     }
 
     h3 {
@@ -334,6 +335,7 @@ footer a{
         font-size: 18px;
         color: #FFF;
     }
+
 
 
 
@@ -418,4 +420,102 @@ footer a{
     font-weight: bold;
     font-family: cursive;
 }
+
+
+
+.logOrsignIn{
+     position: fixed;             
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 450px;
+    height: 220px;
+    padding: 30px 20px;
+    background-color: rgba(13, 13, 13, 0.95); 
+    text-align: center;
+    border-radius: 16px;
+    opacity: 0;                          
+    transition: opacity 0.5s ease;  
+    z-index: -999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #fad398;
+    flex-direction: column;
+}
+.logOrsignIn h1{
+    color:#facc87;
+      font-size: 24px;
+      font-weight: bold;
+      font-weight: bold;
+      font-family: cursive;
+      margin-bottom: 20px;
+}
+.logOrsignIn button{
+    width:100px;
+    margin-top: 10px;
+    background: linear-gradient( 135deg,#52422b, #d27b09);
+    opacity: 1;
+    border-radius: 8px;
+    color: #081212;
+    font-family: Chillax;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 36px;
+    transition: 0.3s ease-in-out;
+
+}
+.logOrsignIn button:hover {
+   background: linear-gradient( 135deg, #473927, #f7b748);
+    opacity: 1;
+    color: rgb(20, 19, 19);
+
+}
+
+.buttons{
+  display: flex;
+  gap:32px;
+  align-items: center;
+}
+.logOrsignIn.show {
+    opacity: 1;
+    z-index: 99999;
+
+}
+.noScroll{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media screen  and (max-width: 500px){
+  .logOrsignIn{
+    width: 80vw;
+    height: 220px;
+  }
+  .logOrsignIn h1{
+    font-size: 16px;
+  }
+   .logOrsignIn button{
+    width:60px;
+    font-size: 10px;
+    height: 22px;
+   }
+   .buttons{
+
+  gap:12px;
+ 
+}
+  
+}
+
+
+
+
+
+
 

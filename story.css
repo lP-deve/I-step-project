@@ -107,10 +107,11 @@ header {
 }
 
 h1 {
-    color: #e6e6e6;
+    color:#F8D49E;
       transition: 0.3s;
+      font-size: 26px;
 }h1:hover{
-     color: #F8D49E;
+     color: #f7f3ec;
 }
 
 
