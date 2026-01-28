@@ -454,10 +454,10 @@ footer a{
 .logOrsignIn button{
     width:100px;
     margin-top: 10px;
-    background: linear-gradient( 135deg,#52422b, #d27b09);
+    background-color: #eab97a;
     opacity: 1;
     border-radius: 8px;
-    color: #fdfdfd;
+    color: #080808;
     font-family: Chillax;
     font-weight: 500;
     font-style: Medium;
@@ -470,9 +470,8 @@ footer a{
 
 }
 .logOrsignIn button:hover {
-   background: linear-gradient( 135deg, #473927, #f7b748);
-    opacity: 1;
-    color: rgb(20, 19, 19);
+
+    opacity: 0.7;
 
 }
 
