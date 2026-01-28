@@ -94,7 +94,9 @@ td input:focus {
   background: rgba(255,255,255,0.05);
   outline: none;
 }
-
+tbody{
+  vertical-align: top;
+}
 
 button {
   padding: 8px 14px;
